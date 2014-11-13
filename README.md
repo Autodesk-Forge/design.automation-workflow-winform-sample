@@ -60,32 +60,35 @@ the sample project looks for anything that sounds like result.pdf, Result.dwf, R
 to work, please ensure that the script saves the result with an appropriate file name as result.dwg, result.pdf, result.dwf etc.
 After the custom activity is created, close the Activities dialog.
 The custom activity should now appear in the list of Activities alongside the shared activity as shown in the below screenshot. 
+
+![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/7.png)
  
 Select the custom activity and choose any drawing from the list of drawings just as we did for using a Shared activity.
 The result of the custom activity will be displayed in the right pane if it is a pdf. For any other outputs such as dwg, dwf, 
 the result file is downloaded to a local path and the path is displayed in the right pane.
 
 Demo 3: Creating and using a custom AutoCAD IO Activity that is linked to an App Package 
-------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
 Create a custom crx or .Net plugin (that does not reference acmgd.dll)
 Package it in AutoCAD Bundle format
 Click on “App Packages” button and provide the details as shown in below screenshot
  
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/7.png)
+![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/8.png)
  
 To create a custom activity that links with the custom app package, click on the Activities button as 
 shown in below screenshot and provide the details.
  
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/8.png)
+![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/9.png)
 
 After the custom activity is created, close the Activities dialog.
 The custom activity should now appear in the list of Activities alongside the shared activity as shown in the below screenshot. 
  
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/9.png)
+![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/10.png)
  
 Select the custom activity and choose any drawing from the list of drawings just as we did for using a Shared activity.
 The result of the custom activity will be downloaded to a local path and the path is displayed as shown in the below screenshot. 
  
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/10.png)
+![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/11.png)
  
 Verify that the custom command has done its task by opening the downloaded result.
