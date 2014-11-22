@@ -1,7 +1,21 @@
 workflow-winform-autocad.io
 ===========================
 
-A C# WinForm application for performing AutoCAD IO workflow tasks
+A C# WinForm application for performing AutoCAD IO workflow tasks.
+
+--------------------------------------------------------------------
+Important note :
+This is a learning/prototyping utility to quickly create custom activities, create AppPackage, 
+submit workitem requests and view downloaded results.
+
+This sample accepts the AutoCAD IO client id and client secret in its settings and this is not 
+the recommended method to be followed in your production code.
+Client Id and Client secret should be kept confidential and should not shared or distributed
+along with your application.
+
+This sample takes the client id and client secret as inputs since as it is not a tool for distribution 
+and is only intended for helping developers quickly try out AutoCAD IO and learn the steps involved.
+----------------------------------------------------------------------
 
 1) As this sample includes a reference to "library-dotnet-autocad.io", please build
 that sample following the instruction provided in that sample. Here is the link :
