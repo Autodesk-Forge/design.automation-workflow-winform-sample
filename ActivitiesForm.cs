@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.ObjectModel;
 
 namespace AutoCADIODemo
 {
@@ -83,17 +84,16 @@ namespace AutoCADIODemo
 
             if (!String.IsNullOrEmpty(userId) && !String.IsNullOrEmpty(activityId) && !String.IsNullOrEmpty(script))
             {
-                // Create the activity
-                if (Autodesk.AcadIOUtils.CreateActivity(activityId, script))
+                // Identify any package that may be selected for linking with this activity
+                ObservableCollection<String> linkedPackageIds = new ObservableCollection<string>();
+                foreach (String linkedPackage in LinkedPackagesList.Items)
                 {
-                    // Link activity with any package that may be selected for linking with this activity
-                    foreach (String linkedPackage in LinkedPackagesList.Items)
-                    {
-                        String packageId = linkedPackage;
-                        if (Autodesk.AcadIOUtils.LinkAppPackage2Activity(activityId, packageId) == false)
-                            break;
-                    }
-                    
+                    linkedPackageIds.Add(linkedPackage);
+                }
+
+                // Create the activity
+                if (Autodesk.AcadIOUtils.CreateActivity(activityId, script, linkedPackageIds))
+                {
                     LoadActivitiesList();
                 }
                 else
