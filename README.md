@@ -1,69 +1,61 @@
-workflow-winform-autocad.io
+#design.automation-workflow-winform
 ===========================
 
-A C# WinForm application for performing AutoCAD IO workflow tasks.
+[![.net](https://img.shields.io/badge/.net-4.5-green.svg)](http://www.microsoft.com/en-us/download/details.aspx?id=30653)
+[![odata](https://img.shields.io/badge/odata-4.0-yellow.svg)](http://www.odata.org/documentation/)
+[![ver](https://img.shields.io/badge/AutoCAD.io-2.0.0-blue.svg)](https://developer.autodesk.com/api/autocadio/v2/)
+[![visual studio](https://img.shields.io/badge/Visual%20Studio-2012%7C2013-brightgreen.svg)](https://www.visualstudio.com/)
+[![License](http://img.shields.io/:license-mit-red.svg)](http://opensource.org/licenses/MIT)
 
---------------------------------------------------------------------
-Important note :
-This is a learning/prototyping utility to quickly create custom activities, create AppPackage, 
-submit workitem requests and view downloaded results.
+##Description
+A C# WinForm application for performing workflow tasks of Design Automation (called AutoCAD IO in the past) on create custom activities, create AppPackage, submit workitem requests and view downloaded results.
 
-This sample accepts the AutoCAD IO client id and client secret in its settings and this is not 
-the recommended method to be followed in your production code.
-Client Id and Client secret should be kept confidential and should not shared or distributed
-along with your application.
+##Dependencies
+* Visual Studio 2012. 2013 or 2015 should be also fine, but has not yet been tested.
+* Get [credentials of AWS](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) and create one S3 bucket
+* Get your credentials of Design Automation at http://developer.autodesk.com
 
-This sample takes the client id and client secret as inputs since as it is not a tool for distribution 
-and is only intended for helping developers quickly try out AutoCAD IO and learn the steps involved.
-----------------------------------------------------------------------
+##Setup/Usage Instructions
+* As this sample includes a reference to *library-dotnet-autocad.io*, please build that sample following the instruction provided in that sample. Here is the link :https://github.com/Developer-Autodesk/library-dotnet-autocad.io.
+* After you have built the library project, open the AutoCADIODemo sample project in Visual Studio 2012
+* Restore the packages of the project by [NuGet](https://www.nuget.org/). The simplest way is to Projects tab >> Enable NuGet Package Restore. Then right click the project>>"Manage NuGet Packages for Solution" >> "Restore" (top right of dialog)
+* Add other missing references and the library of *library-dotnet-autocad.io*
+* In the project settings, provide the following details:
+ * Path to a local folder in your system that contains AutoCAD drawings.
+ * AutoCAD IO Client Id
+ * AutoCAD IO Client Secret
+ * Bucket name in your AWS S3 Storage
 
-1) As this sample includes a reference to "library-dotnet-autocad.io", please build
-that sample following the instruction provided in that sample. Here is the link :
-https://github.com/Developer-Autodesk/library-dotnet-autocad.io
+![Picture](./assets/1.png)
 
-2) After you have built the library project, 
-Open the AutoCADIODemo sample project in Visual Studio 2012
+* Open “App.Config” file and fill in AWS credentials. This will allow the sample project to access S3 storage in your AWS profile.
 
-3) Add reference to AutoCADIOUtil library
+![Picture](./assets/2.png)
 
-4) In the project settings, provide the following details:
--	Path to a local folder in your system that contains AutoCAD drawings.
--	AutoCAD IO Client Id
--	AutoCAD IO Client Secret
--	Bucket name in your AWS S3 Storage
 
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/1.png)
+* Build the sample project
 
-5) Open “App.Config” file and provide AWS credentials. This will allow the sample project to access S3 storage in your 
-AWS profile.
-
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/2.png)
-
-6) Build the sample project
-
-7) Run AutoCADIODemo.exe for the main window to appear
+* Run AutoCADIODemo.exe. the main window to appear
 
 The path to the sample drawings that was provided in the project settings can also be provided by accessing 
 “Settings” button as shown in the below screenshot.
 
 ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/3.png)
  
-Demo 1: Using Shared AutoCAD IO Activity
+* Demo 1: Using Shared Design Automation Activity
 -----------------------------------------------------------------------------------------------------------------------------
-AutoCAD IO provides a Shared activity which is named “PlotToPDF”. This activity is available by default. 
-Choose this activity from the list of activities as shown in the below screenshot.
-Select any drawing from the list of drawings that appear at the left. 
+ * Design Automation provides a Shared activity which is named “PlotToPDF”. This activity is available by default. Choose this activity from the list of activities as shown in the below screenshot.Select any drawing from the list of drawings that appear at the left. 
 
-![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/4.png)
+  ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/4.png)
 
-The chosen drawing will be uploaded to the S3 storage and a WorkItem will be created based on the selected activity. 
+  The chosen drawing will be uploaded to the S3 storage and a WorkItem will be created based on the selected activity.
 The WorkItem will be submitted to AutoCAD IO for processing and the result will get displayed in the right pane.
  
  ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/5.png)
  
-Demo 2: Creating and using a custom AutoCAD IO Activity 
+* Demo 2: Creating and using a custom AutoCAD IO Activity 
 -----------------------------------------------------------------------------------------------------------------------------
-To create a custom activity, click on the Activities button as shown in below screenshot and provide the details.
+   To create a custom activity, click on the Activities button as shown in below screenshot and provide the details.
  
 ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/6.png)
  
