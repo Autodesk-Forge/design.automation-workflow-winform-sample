@@ -11,19 +11,20 @@
 A C# WinForm application for performing workflow tasks of Design Automation (called AutoCAD IO in the past) on create custom activities, create AppPackage, submit workitem requests and view downloaded results.
 
 ##Dependencies
+* As this sample includes a reference to  [design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library), please build that sample firstly.  
 * Visual Studio 2012. 2013 or 2015 should be also fine, but has not yet been tested.
 * Get [credentials of AWS](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) and create one S3 bucket
-* Get your credentials of Design Automation at http://developer.autodesk.com
+* Get your credentials of Design Automation at http://developer.autodesk.com* 
 
 ##Setup/Usage Instructions
-* As this sample includes a reference to *library-dotnet-autocad.io*, please build that sample following the instruction provided in that sample. Here is the link :https://github.com/Developer-Autodesk/library-dotnet-autocad.io.
-* After you have built the library project, open the AutoCADIODemo sample project in Visual Studio 2012
+* Build the library project [design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library).
+* After you have built the library project, open the *AutoCADIODemo* sample project in Visual Studio 2012
 * Restore the packages of the project by [NuGet](https://www.nuget.org/). The simplest way is to Projects tab >> Enable NuGet Package Restore. Then right click the project>>"Manage NuGet Packages for Solution" >> "Restore" (top right of dialog)
 * Add other missing references and the library of *library-dotnet-autocad.io*
 * In the project settings, provide the following details:
  * Path to a local folder in your system that contains AutoCAD drawings.
- * AutoCAD IO Client Id
- * AutoCAD IO Client Secret
+ * Design Automation Client Id
+ * Design Automation Client Secret
  * Bucket name in your AWS S3 Storage
 
 ![Picture](./assets/1.png)
