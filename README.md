@@ -42,7 +42,7 @@ The path to the sample drawings that was provided in the project settings can al
 
 ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/3.png)
  
-* Demo 1: Using Shared Design Automation Activity
+Demo 1: Using Shared Design Automation Activity
 -----------------------------------------------------------------------------------------------------------------------------
  * Design Automation provides a Shared activity which is named “PlotToPDF”. This activity is available by default. Choose this activity from the list of activities as shown in the below screenshot.Select any drawing from the list of drawings that appear at the left. 
 
@@ -53,7 +53,7 @@ The WorkItem will be submitted to AutoCAD IO for processing and the result will 
  
  ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/5.png)
  
-* Demo 2: Creating and using a custom AutoCAD IO Activity 
+Demo 2: Creating and using a custom AutoCAD IO Activity 
 -----------------------------------------------------------------------------------------------------------------------------
    To create a custom activity, click on the Activities button as shown in below screenshot and provide the details.
  
@@ -98,3 +98,5 @@ The result of the custom activity will be downloaded to a local path and the pat
 ![Picture](https://github.com/Developer-Autodesk/workflow-winform-autocad.io/blob/master/assets/11.png)
  
 Verify that the custom command has done its task by opening the downloaded result.
+
+another material of demo3 is: https://github.com/Developer-Autodesk/design.automation-.net-custom.activity.sample
