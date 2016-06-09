@@ -75,7 +75,7 @@ Select the custom activity and choose any drawing from the list of drawings just
 The result of the custom activity will be displayed in the right pane if it is a pdf. For any other outputs such as dwg, dwf, 
 the result file is downloaded to a local path and the path is displayed in the right pane.
 
-Demo 3: Creating and using a custom AutoCAD IO Activity that is linked to an App Package 
+Demo 3: Creating and using a custom Design Automation Activity that is linked to an App Package 
 -----------------------------------------------------------------------------------------------------------------------------
 
 Create a custom crx or .Net plugin (that does not reference acmgd.dll)
