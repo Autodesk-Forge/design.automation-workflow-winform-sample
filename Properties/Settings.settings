@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="DrawingsFolderPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\Temp\AutoCADIOTestDrawings</Value>
+      <Value Profile="(Default)">D:\Temp\DesignAutoTestDrawings</Value>
     </Setting>
     <Setting Name="DesignAutoClientId" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

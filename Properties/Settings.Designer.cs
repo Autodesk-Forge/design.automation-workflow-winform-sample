@@ -25,7 +25,7 @@ namespace AutoCADIODemo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Temp\\AutoCADIOTestDrawings")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Temp\\DesignAutoTestDrawings")]
         public string DrawingsFolderPath {
             get {
                 return ((string)(this["DrawingsFolderPath"]));
