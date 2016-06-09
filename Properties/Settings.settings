@@ -5,14 +5,14 @@
     <Setting Name="DrawingsFolderPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\Temp\AutoCADIOTestDrawings</Value>
     </Setting>
-    <Setting Name="AutoCADIOClientId" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
+    <Setting Name="DesignAutoClientId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="AutoCADIOClientSecret" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
+    <Setting Name="DesignAutoClientSecret" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="S3BucketName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">acesbucket</Value>
+      <Value Profile="(Default)">forgedesignautomation</Value>
     </Setting>
   </Settings>
 </SettingsFile>

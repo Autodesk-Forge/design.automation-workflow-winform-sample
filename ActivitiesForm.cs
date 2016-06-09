@@ -76,7 +76,7 @@ namespace AutoCADIODemo
         private void NewActivityBtn_Click(object sender, EventArgs e)
         {
             // User Id is our AutoCADIO Client Id
-            String userId = Properties.Settings.Default.AutoCADIOClientId;
+            String userId = Properties.Settings.Default.DesignAutoClientId;
             
             // Activity Id and script as provided in the text boxes
             String activityId = ActivityIdText.Text;

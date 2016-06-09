@@ -16,8 +16,8 @@ namespace AutoCADIODemo
             InitializeComponent();
             // Populate the settings form based on the values saved in the default settings.
             drawingsFolderPathTextBox.Text = Properties.Settings.Default.DrawingsFolderPath;
-            AutoCADIOClientIDText.Text = Properties.Settings.Default.AutoCADIOClientId;
-            AutoCADIOClientSecretText.Text = Properties.Settings.Default.AutoCADIOClientSecret;
+            AutoCADIOClientIDText.Text = Properties.Settings.Default.DesignAutoClientId;
+            AutoCADIOClientSecretText.Text = Properties.Settings.Default.DesignAutoClientSecret;
         }
 
         /// <summary>
@@ -28,8 +28,8 @@ namespace AutoCADIODemo
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             // Update the default settings based on the values specified by the user and save it.
-            Properties.Settings.Default.AutoCADIOClientId = AutoCADIOClientIDText.Text;
-            Properties.Settings.Default.AutoCADIOClientSecret = AutoCADIOClientSecretText.Text;
+            Properties.Settings.Default.DesignAutoClientId = AutoCADIOClientIDText.Text;
+            Properties.Settings.Default.DesignAutoClientSecret = AutoCADIOClientSecretText.Text;
             Properties.Settings.Default.DrawingsFolderPath = drawingsFolderPathTextBox.Text;
 
             Properties.Settings.Default.Save();

@@ -47,9 +47,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoCADIOUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AutoCADIOUtil\AutoCADIOUtil\bin\Debug\AutoCADIOUtil.dll</HintPath>
+    <Reference Include="AutoCADIOUtil">
+      <HintPath>..\..\..\..\..\..\temp\forge\AutoCADIOUtil\AutoCADIOUtil\bin\Debug\AutoCADIOUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK">
+      <HintPath>..\..\..\..\..\..\temp\forge\AutoCADIOUtil\AutoCADIOUtil\bin\Debug\AWSSDK.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
