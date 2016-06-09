@@ -21,7 +21,7 @@ A C# WinForm application for performing workflow tasks of Design Automation (cal
 * Build the library project [design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library).
 * After you have built the library project, open the *AutoCADIODemo* sample project in Visual Studio 2012
 * Restore the packages of the project by [NuGet](https://www.nuget.org/). The simplest way is to Projects tab >> Enable NuGet Package Restore. Then right click the project>>"Manage NuGet Packages for Solution" >> "Restore" (top right of dialog)
-* Add other missing references and the library of *library-dotnet-autocad.io*
+* Add other missing references and the library of[design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library)
 * In the project settings, provide the following details:
  * Path to a local folder in your system that contains AutoCAD drawings.
  * Design Automation Client Id
