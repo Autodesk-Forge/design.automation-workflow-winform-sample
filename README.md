@@ -5,7 +5,7 @@
 [![.net](https://img.shields.io/badge/.net-4.5-green.svg)](http://www.microsoft.com/en-us/download/details.aspx?id=30653)
 [![odata](https://img.shields.io/badge/odata-4.0-yellow.svg)](http://www.odata.org/documentation/)
 [![ver](https://img.shields.io/badge/Design%20Automation%20API-2.0-blue.svg)](https://developer.autodesk.com/api/autocadio/v2/)
-[![visual studio](https://img.shields.io/badge/Visual%20Studio-2012%7C2013-yellow.svg)](https://www.visualstudio.com/)
+[![visual studio](https://img.shields.io/badge/Visual%20Studio-2012%7C2013%7C2015-blue.svg)](https://www.visualstudio.com/)
 [![License](http://img.shields.io/:license-mit-red.svg)](http://opensource.org/licenses/MIT)
 
 ##Description
@@ -13,17 +13,18 @@ A C# WinForm application for performing workflow tasks of Design Automation (cal
 
 ##Dependencies
 * As this sample includes a reference to  [design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library), please build that sample firstly.  
-* Visual Studio 2012. 2013 or 2015 should be also fine, but has not yet been tested.
+* Visual Studio 2012. 2013 or 2015. The latest test is on VS2015.
 * Get [credentials of AWS](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) and create one S3 bucket
 * Get your credentials of Design Automation at http://developer.autodesk.com* 
 
 ##Setup/Usage Instructions
 * Build the library project [design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library).
-* After you have built the library project, open the *AutoCADIODemo* sample project in Visual Studio 2012
-* Restore the packages of the project by [NuGet](https://www.nuget.org/). The simplest way is to Projects tab >> Enable NuGet Package Restore. Then right click the project>>"Manage NuGet Packages for Solution" >> "Restore" (top right of dialog)
+* Restore the packages of the project by [NuGet](https://www.nuget.org/). The simplest way is
+  * VS2012: Projects tab >> Enable NuGet Package Restore. Then right click the project>>"Manage NuGet Packages for Solution" >> "Restore" (top right of dialog)
+  * VS2013/VS2015:  right click the project>>"Manage NuGet Packages for Solution" >> "Restore" (top right of dialog)
 * Add other missing references and the library of[design.automation-.net-library](https://github.com/Developer-Autodesk/design.automation-.net-library)
 * In the project settings, provide the following details:
- * Path to a local folder in your system that contains AutoCAD drawings.
+ * Path to a local folder in your system that contains AutoCAD drawings. Put somtest drawings in this folder.
  * Design Automation Client Id
  * Design Automation Client Secret
  * Bucket name in your AWS S3 Storage
