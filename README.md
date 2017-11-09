@@ -60,7 +60,7 @@ Demo 2: Creating and using a custom AutoCAD IO Activity
 -----------------------------------------------------------------------------------------------------------------------------
    To create a custom activity, click on the Activities button as shown in below screenshot and provide the details.
  
-![Picture](./assets/6.png)
+![Thumbnail](./assets/6.png)
  
 Important Note : The script should be implemented such that the result file is named as “result.*”. 
 The result file name can be any name of your choice, AutoCAD IO does not have a restriction on that. 
