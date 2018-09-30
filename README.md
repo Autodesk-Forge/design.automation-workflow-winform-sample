@@ -45,7 +45,8 @@ A C# WinForm application for performing workflow tasks of Design Automation on c
   ![Picture](./assets/3.png)
 
 ## Demonstrations
-Demo 1: Using Shared Design Automation Activity
+
+### Demo 1: Using Shared Design Automation Activity
 -----------------------------------------------------------------------------------------------------------------------------
  * Design Automation provides a Shared activity which is named “PlotToPDF”. This activity is available by default. Choose this activity from the list of activities as shown in the below screenshot.Select any drawing from the list of drawings that appear at the left. 
 
@@ -56,7 +57,7 @@ The WorkItem will be submitted to AutoCAD IO for processing and the result will 
  
  ![Picture](./assets/5.png)
  
-Demo 2: Creating and using a custom AutoCAD IO Activity 
+### Demo 2: Creating and using a custom AutoCAD IO Activity 
 -----------------------------------------------------------------------------------------------------------------------------
    To create a custom activity, click on the Activities button as shown in below screenshot and provide the details.
  
@@ -76,7 +77,7 @@ Select the custom activity and choose any drawing from the list of drawings just
 The result of the custom activity will be displayed in the right pane if it is a pdf. For any other outputs such as dwg, dwf, 
 the result file is downloaded to a local path and the path is displayed in the right pane.
 
-Demo 3: Creating and using a custom Design Automation Activity that is linked to an App Package 
+### Demo 3: Creating and using a custom Design Automation Activity that is linked to an App Package 
 -----------------------------------------------------------------------------------------------------------------------------
 
 Create a custom crx or .Net plugin (that does not reference acmgd.dll)
